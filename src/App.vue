@@ -1,36 +1,30 @@
 <template>
   <v-app>
     <v-app-bar app>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>マイアドレス帳</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
     </v-app-bar>
+    <SideNav/>
 
     <v-content>
-      <HelloWorld/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
+import SideNav from "./components/SideNav"
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    SideNav
   },
-  data: () => ({
-    //
-  }),
-};
+  data () {
+    return {
+      //
+    }
+  }
+}
 </script>
